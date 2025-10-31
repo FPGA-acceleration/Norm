@@ -102,7 +102,7 @@ assign data = S_AXIS_TDATA[143:16];
   );  
     
     
-  inv_sqrt u_inv_sqrt(
+  inv_sqrt_v2 u_inv_sqrt(
     .aclk(aclk),
     .aresetn(arstn),
 

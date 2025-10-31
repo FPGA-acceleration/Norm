@@ -125,7 +125,7 @@ BEGIN
       C_XDEVICEFAMILY => "zynquplus",
       C_VERBOSITY => 0,
       C_WIDTH => 128,
-      C_DEPTH => 45,
+      C_DEPTH => 42,
       C_ADDR_WIDTH => 4,
       C_SHIFT_TYPE => 0,
       C_OPT_GOAL => 0,

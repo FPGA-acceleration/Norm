@@ -1,0 +1,2 @@
+rcpr_sqrt.v,verilog,xil_defaultlib,../../../../Normslize.gen/sources_1/ip/rcpr_sqrt/sim/rcpr_sqrt.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

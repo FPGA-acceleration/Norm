@@ -34,13 +34,13 @@ module inv_fifo(
     input M_AXIS_TREADY
     );
 
-    localparam depth = 45 ;
+    localparam depth = 42 ;
 
     reg [ depth - 1 : 0 ] m_axis_tvalid;
 
     always @(posedge aclk or negedge arstn) begin
         if(!arstn) begin
-            m_axis_tvalid <= 45'b0;
+            m_axis_tvalid <= 42'b0;
         end
 
         else if(S_AXIS_TREADY & S_AXIS_TVALID) begin

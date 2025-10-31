@@ -60,19 +60,19 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="kv260_som_som240_1_connector_kv260_carrier_som240_1_connector"/>
-    <Option Name="WTXSimLaunchSim" Val="31"/>
+    <Option Name="WTXSimLaunchSim" Val="32"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="15"/>
-    <Option Name="WTModelSimExportSim" Val="15"/>
-    <Option Name="WTQuestaExportSim" Val="15"/>
+    <Option Name="WTXSimExportSim" Val="17"/>
+    <Option Name="WTModelSimExportSim" Val="17"/>
+    <Option Name="WTQuestaExportSim" Val="17"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="15"/>
-    <Option Name="WTRivieraExportSim" Val="15"/>
+    <Option Name="WTVcsExportSim" Val="17"/>
+    <Option Name="WTRivieraExportSim" Val="17"/>
     <Option Name="WTActivehdlExportSim" Val="0"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
@@ -217,15 +217,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/norm_port/bf_fifo.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../norm_port/bf_fifo.v"/>
-          <Attr Name="ImportTime" Val="1761045541"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/norm_port/inv_fifo.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../norm_port/inv_fifo.v"/>
@@ -235,19 +226,17 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/norm_port/inv_sqrt.v">
+      <File Path="$PSRCDIR/sources_1/imports/norm_port/inv_sqrt_top.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../norm_port/inv_sqrt.v"/>
-          <Attr Name="ImportTime" Val="1761639093"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../norm_port/inv_sqrt_top.v"/>
+          <Attr Name="ImportTime" Val="1761653006"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/norm_port/inv_sqrt_top.v">
+      <File Path="$PSRCDIR/sources_1/new/inv_sqrt_v2.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../norm_port/inv_sqrt_top.v"/>
-          <Attr Name="ImportTime" Val="1761653006"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -292,6 +281,26 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/norm_port/bf_fifo.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../norm_port/bf_fifo.v"/>
+          <Attr Name="ImportTime" Val="1761045541"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/norm_port/inv_sqrt.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../norm_port/inv_sqrt.v"/>
+          <Attr Name="ImportTime" Val="1761639093"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/norm_port/rms_sum_topv2.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -324,14 +333,14 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
-      <File Path="$PSRCDIR/sim_1/new/LayerNorm_wrapper_tb.v">
+      <File Path="$PSRCDIR/sim_1/new/Layernorm_1batch.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/new/Layernorm_1batch.v">
+      <File Path="$PSRCDIR/sim_1/new/LayerNorm_wrapper_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -347,7 +356,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="Layer_matrix_tb"/>
+        <Option Name="TopModule" Val="Layer_top_1batch_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
@@ -567,6 +576,19 @@
     <FileSet Name="LayerNorm_cal_var_top_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/LayerNorm_cal_var_top_0_0" RelGenDir="$PGENDIR/LayerNorm_cal_var_top_0_0">
       <Config>
         <Option Name="TopModule" Val="LayerNorm_cal_var_top_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="rcpr_sqrt" Type="BlockSrcs" RelSrcDir="$PSRCDIR/rcpr_sqrt" RelGenDir="$PGENDIR/rcpr_sqrt">
+      <File Path="$PSRCDIR/sources_1/ip/rcpr_sqrt/rcpr_sqrt.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="rcpr_sqrt"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -797,6 +819,18 @@
       <RQSFiles/>
     </Run>
     <Run Id="LayerNorm_cal_var_top_0_0_synth_1" Type="Ft3:Synth" SrcSet="LayerNorm_cal_var_top_0_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="LayerNorm_cal_var_top_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/LayerNorm_cal_var_top_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/LayerNorm_cal_var_top_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/LayerNorm_cal_var_top_0_0_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="rcpr_sqrt_synth_1" Type="Ft3:Synth" SrcSet="rcpr_sqrt" Part="xck26-sfvc784-2LV-c" ConstrsSet="rcpr_sqrt" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/rcpr_sqrt_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/rcpr_sqrt_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/rcpr_sqrt_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -1132,6 +1166,25 @@
       <RQSFiles/>
     </Run>
     <Run Id="LayerNorm_cal_var_top_0_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="LayerNorm_cal_var_top_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="LayerNorm_cal_var_top_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/LayerNorm_cal_var_top_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/LayerNorm_cal_var_top_0_0_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="rcpr_sqrt_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="rcpr_sqrt" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="rcpr_sqrt_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/rcpr_sqrt_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/rcpr_sqrt_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
           <Desc>Default settings for Implementation.</Desc>
