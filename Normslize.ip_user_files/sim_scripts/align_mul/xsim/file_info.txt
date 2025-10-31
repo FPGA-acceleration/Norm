@@ -1,0 +1,2 @@
+align_mul.vhd,vhdl,xil_defaultlib,../../../../Normslize.gen/sources_1/ip/align_mul/sim/align_mul.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

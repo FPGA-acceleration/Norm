@@ -1,0 +1,13 @@
+verilog xil_defaultlib  \
+"../../../bd/LayerNorm/ip/LayerNorm_process_mean_top_0_0/sim/LayerNorm_process_mean_top_0_0.v" \
+"../../../bd/LayerNorm/ip/LayerNorm_accumulator_0_0/sim/LayerNorm_accumulator_0_0.v" \
+"../../../bd/LayerNorm/ip/LayerNorm_cal_rms_sum_0_0/sim/LayerNorm_cal_rms_sum_0_0.v" \
+"../../../bd/LayerNorm/ip/LayerNorm_cal_var_top_0_0/sim/LayerNorm_cal_var_top_0_0.v" \
+"../../../bd/LayerNorm/ip/LayerNorm_axis_broadcaster_top_0_0/sim/LayerNorm_axis_broadcaster_top_0_0.v" \
+"../../../bd/LayerNorm/ip/LayerNorm_cal_norm_top_0_0/sim/LayerNorm_cal_norm_top_0_0.v" \
+"../../../bd/LayerNorm/sim/LayerNorm.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

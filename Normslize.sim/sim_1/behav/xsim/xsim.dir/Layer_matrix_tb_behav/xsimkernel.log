@@ -1,0 +1,4 @@
+Running: xsim.dir/Layer_matrix_tb_behav/xsimk -simmode gui -wdb Layer_matrix_tb_behav.wdb -simrunnum 0 -socket 33697
+Design successfully loaded
+Design Loading Memory Usage: 233232 KB (Peak: 233680 KB)
+Design Loading CPU Usage: 900 ms
